@@ -3,6 +3,10 @@ Allows registered users to send "tickets," which can be viewed by individuals wi
 
 *[Here are some useful links, like downloads or docs.](#useful-links)*
 
+# Default Credentials
+- **Email:** owner@void.com
+- **Password:** Owner-1234
+  
 # How to run
 ## React App
 1. Open /react-app directory and install required node modules (Node.js v20.16.0):
@@ -47,6 +51,7 @@ For email notifications to work, you have to change email and app password.
 
 # Useful links
 - [Nodejs - Download](https://nodejs.org/en/download/package-manager)
+- [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 - [Docker Desktop - Download](https://www.docker.com/products/docker-desktop/)
 - [Azure Blob Storage - How to](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 - [RabbitMQ - Docker Setup](https://www.rabbitmq.com/docs/download)
