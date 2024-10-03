@@ -64,6 +64,7 @@ const TicketsPage = () => {
                                         isOpen: true,
                                         title: "Sent!",
                                         message: res.data.content,
+                                        onClick: () => window.location.reload()
                                     }));
                                 }
                             }).catch(err => {

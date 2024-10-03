@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Elastic.Transport;
 
 namespace API.Services;
@@ -26,10 +27,11 @@ public class ElasticTicketDatabase : ITicketDatabase
 {
     private readonly ElasticsearchClient client;
 
-    public ElasticTicketDatabase()
+    public ElasticTicketDatabase(IConfiguration configuration)
     {
-        var settings = new ElasticsearchClientSettings(new Uri("http://localhost:9200"))
-            .Authentication(new BasicAuthentication("elastic", "mypassword"));
+        Debug.WriteLine(configuration["Elasticsearch:password"]);
+        var settings = new ElasticsearchClientSettings(new Uri(configuration["Elasticsearch:connectionURI"]))
+            .Authentication(new BasicAuthentication(configuration["Elasticsearch:username"], configuration["Elasticsearch:password"]));
 
         this.client = new(settings);
     }

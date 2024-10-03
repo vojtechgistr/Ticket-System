@@ -20,5 +20,10 @@
       "Domain": "localhost",
       "DaysToExpire": 7
     }
+  },
+  "Elasticsearch": {
+    "connectionURI": "http://localhost:9200",
+    "username": "elastic",
+    "password": "mypassword"
   }
 }
