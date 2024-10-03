@@ -1,0 +1,24 @@
+{
+  "ConnectionStrings": {
+    "Default": "HERE",
+    "AzureBlobStorage": "HERE"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "JWT": {
+    "ValidAudience": "http://localhost:8080",
+    "ValidIssuer": "https://localhost:7255",
+    "Secret": "HERE",
+    "Cookie":  {
+      "Secure": false,
+      "HttpOnly": true,
+      "Domain": "localhost",
+      "DaysToExpire": 7
+    }
+  }
+}
