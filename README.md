@@ -1,6 +1,8 @@
 # Overview
 Allows registered users to send "tickets," which can be viewed by individuals with sufficient permissions. Implements an email service, a Content Delivery Network (CDN), and an interactive user interface.
 
+[Here are some useful links, like downloads or docs.](#useful-links)
+
 # How to run
 ## React App
 1. Open /react-app directory and install required node modules (Node.js v20.16.0):
@@ -43,8 +45,9 @@ For email notifications to work, you have to change email and app password.
 ```
 *If using Gmail SMTP, don't forget to use APP PASSWORD. [Here](https://support.google.com/mail/answer/185833?hl=en) is how to set it up!*
 
-# Useful links:
+# Useful links
 - [Nodejs - Download](https://nodejs.org/en/download/package-manager)
+- [Docker Desktop - Download](https://www.docker.com/products/docker-desktop/)
 - [Azure Blob Storage - How to](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 - [RabbitMQ - Docker Setup](https://www.rabbitmq.com/docs/download)
 - [Elasticsearch - Docker Setup](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
