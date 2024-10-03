@@ -48,6 +48,9 @@ For email notifications to work, you have to change email and app password.
     private const string Password = "mypassword"; // change to your APP password
 ```
 *If using Gmail SMTP, don't forget to use APP PASSWORD. [Here](https://support.google.com/mail/answer/185833?hl=en) is how to set it up!*
+### Build Database
+1. Open Package Manager.
+2. Run `Update-Database` command.
 
 # Useful links
 - [Nodejs - Download](https://nodejs.org/en/download/package-manager)
@@ -56,5 +59,5 @@ For email notifications to work, you have to change email and app password.
 - [Azure Blob Storage - How to](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 - [RabbitMQ - Docker Setup](https://www.rabbitmq.com/docs/download)
 - [Elasticsearch - Docker Setup](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
-- [Azure SQL Database](https://azure.microsoft.com/en-us/products/azure-sql/database/?&ef_id=_k_CjwKCAjwgfm3BhBeEiwAFfxrG_JyfJmGpH2h6z9Uo3GqYjVhWqW-UkeVpaGnEy0xLWOayHUJ8i3SdRoCMxQQAvD_BwE_k_&OCID=AIDcmm22fzqsrc_SEM__k_CjwKCAjwgfm3BhBeEiwAFfxrG_JyfJmGpH2h6z9Uo3GqYjVhWqW-UkeVpaGnEy0xLWOayHUJ8i3SdRoCMxQQAvD_BwE_k_&gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG_JyfJmGpH2h6z9Uo3GqYjVhWqW-UkeVpaGnEy0xLWOayHUJ8i3SdRoCMxQQAvD_BwE)
 - [SQL Server - Download](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+- [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms?view=sql-server-ver16)
