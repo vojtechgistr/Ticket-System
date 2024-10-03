@@ -1,7 +1,7 @@
 # Overview
 Allows registered users to send "tickets," which can be viewed by individuals with sufficient permissions. Implements an email service, a Content Delivery Network (CDN), and an interactive user interface.
 
-[Here are some useful links, like downloads or docs.](#useful-links)
+*[Here are some useful links, like downloads or docs.](#useful-links)*
 
 # How to run
 ## React App
