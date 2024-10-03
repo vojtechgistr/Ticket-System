@@ -31,11 +31,11 @@ docker run --hostname=es --name=elasticsearch --user=1000:0 --env=xpack.license.
 docker run -d --hostname=rmq --name rabbit-server -p 8090:15672 -p 5672:5672 rabbitmq:3.13-management
 ```
 
-## Server
-1. Open Server/Server.sln project.
-2. Rename `template.appsettings.json` to `appsettings.json` and fill the required fields.
-3. Build & Run projects: `API`, `MessagingService`
-### Setting-up email notifications
+## Build Database
+1. Open Package Manager.
+2. Run `Update-Database` command.
+
+## Setting-up email notifications
 For email notifications to work, you have to change email and app password.
 1. Go to `MessagingService/EmailSender.cs`
 2. Modify SMTP client if needed.
@@ -48,9 +48,11 @@ For email notifications to work, you have to change email and app password.
     private const string Password = "mypassword"; // change to your APP password
 ```
 *If using Gmail SMTP, don't forget to use APP PASSWORD. [Here](https://support.google.com/mail/answer/185833?hl=en) is how to set it up!*
-### Build Database
-1. Open Package Manager.
-2. Run `Update-Database` command.
+
+## Backend
+1. Open Server/Server.sln project.
+2. Rename `template.appsettings.json` to `appsettings.json` and fill the required fields.
+3. Build & Run projects: `API`, `MessagingService`
 
 # Useful links
 - [Nodejs - Download](https://nodejs.org/en/download/package-manager)
