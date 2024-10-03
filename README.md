@@ -34,6 +34,11 @@ docker run -d --hostname=rmq --name rabbit-server -p 8090:15672 -p 5672:5672 rab
 ## Build Database
 1. Open Package Manager.
 2. Run `Update-Database` command.
+#### SQL Server not found?
+1. Open Visual Studio Installer
+2. Go to Individual Components and install SQL Server (localdb) and it's required components.
+   
+*Or install SQL Server Express [here](https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x409&culture=en-us&country=us)*
 
 ## Setting-up email notifications
 For email notifications to work, you have to change email and app password.
