@@ -29,6 +29,19 @@ docker run -d --hostname=rmq --name rabbit-server -p 8090:15672 -p 5672:5672 rab
 1. Open Server/Server.sln project.
 2. Rename `template.appsettings.json` to `appsettings.json` and fill the required fields.
 3. Build & Run projects: `API`, `MessagingService`
+### Setting-up email notifications
+For email notifications to work, you have to change email and app password.
+1. Go to `MessagingService/EmailSender.cs`
+2. Modify SMTP client if needed.
+```cs
+  private readonly SmtpClient client = new("smtp.gmail.com", 587)
+```
+3. Change credentials on line 17 and 18.
+```cs
+    private const string Email = "myemail"; // change email
+    private const string Password = "mypassword"; // change to your APP password
+```
+*If using Gmail SMTP, don't forget to use APP PASSWORD. [Here](https://support.google.com/mail/answer/185833?hl=en) is how to set it up!*
 
 # Useful links:
 - [Nodejs - Download](https://nodejs.org/en/download/package-manager)
