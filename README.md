@@ -13,7 +13,7 @@ Allows registered users to send "tickets," which can be viewed by individuals wi
 ```
 npm install
 ```
-2. To run this app, run following command:
+2. To run this app use following command:
 ```
 npm run dev
 ```
